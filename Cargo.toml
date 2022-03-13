@@ -1,0 +1,24 @@
+[package]
+name = "kiero4rs"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["rlib"]
+
+[dependencies]
+cxx = "1"
+
+[build-dependencies]
+cxx-build = "1"
+tempdir = "0.3"
+
+[features]
+default = ["minhook"]
+d3d9 = []
+d3d10 = []
+d3d11 = []
+d3d12 = []
+opengl = []
+vulkan = []
+minhook = []
